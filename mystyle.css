@@ -1,0 +1,97 @@
+
+html {background-image:url('Images/Background1.jpg')}
+
+body{	background: #ffff99;
+		border: 5px solid #ffdb4d;
+		padding: 10px;
+		margin: 60px;
+		font-family: Arial;
+		color: #4d4d4d;
+		text-align: justify;}	
+		
+.header		{grid-area: header;}
+.sidebar	{grid-area: sidebar;}
+.content	{grid-area: content;}
+.sidebar2	{grid-area: sidebar2;}
+.footer		{grid-area: footer;}
+
+.wrapper	{	display: grid;
+				grid-gap: 1em;
+				grid-template-areas:
+				"header"
+				"sidebar"
+				"content"
+				"sidebar2"
+				"footer"}
+		
+#myHeader 	{ 	color: #009999;
+				font-family: Arial;
+				font-size: 40px;
+				margin-left: 20px;}
+				
+			
+nav { width: 100%;
+  background-color: white;
+  margin: 0;
+  overflow: auto;}
+  
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;}
+  
+nav ul li {list-style-type: none;}
+  
+nav ul li a {	font-family: Arial;
+				font-weight: bold;
+				display: block;
+				padding: 1em 4.5em;
+				text-decoration: none;
+				fixed: botttom;}
+				
+nav ul li:first-child {
+  margin-right: center;
+}
+nav ul li a.logo {
+  background-color: white;
+}
+nav ul li a:link 	{	color: #4d4d4d; 
+						background-color: transparent; 
+						text-decoration: none;}	
+nav ul li a:visited {	color: #4d4d4d; 
+						background-color: transparent; 
+						text-decoration: none;}
+nav ul li a:hover 	{ 	color: #009999;
+						background-color: #ffdb4d;
+						text-decoration: none;}
+nav ul li a:active 	{	color: #009999; 
+						background-color: transparent; 
+						text-decoration: none;}				
+							
+
+							
+a:link 		{	color: blue; 
+				background-color: transparent; 
+				text-decoration: none;}	
+a:visited 	{	color: blue; 
+				background-color: transparent; 
+				text-decoration: none;}	
+a:hover 	{	color: #009999; 
+				background-color: transparent; 
+				text-decoration: none;}	
+a:active 	{	color: #009999; 
+				background-color: transparent; 
+				text-decoration: none;}	
+				
+#myDiv	{	background-color: #white;
+			border: 5px solid #009999;
+			padding: 30px;
+			margin: 50px;}			
+					
+					
+footer {display: block;
+		background-color: white;
+		color: #4d4d4d;
+		bottom: 0;
+		width: 100%;
+		text-align: left;}
