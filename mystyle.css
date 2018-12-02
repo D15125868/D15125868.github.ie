@@ -10,24 +10,34 @@ body{	background: #ffff99;
 		text-align: justify;}	
 		
 .header		{grid-area: header;}
-.sidebar	{grid-area: sidebar;}
 .content	{grid-area: content;}
-.sidebar2	{grid-area: sidebar2;}
+.sidebar	{grid-area: sidebar;}
 .footer		{grid-area: footer;}
 
 .wrapper	{	display: grid;
 				grid-gap: 1em;
 				grid-template-areas:
 				"header"
-				"sidebar"
 				"content"
-				"sidebar2"
-				"footer"}
-		
-#myHeader 	{ 	color: #009999;
-				font-family: Arial;
-				font-size: 40px;
-				margin-left: 20px;}
+				"sidebar"
+				"footer";}
+				
+@media (min-width: 500px) {
+	.wrapper {	grid-template-columns: 20% auto;
+				grid-template-areas:
+				"header header"
+				"content sidebar"
+				"content sidebar"
+				"footer footer";}}
+				
+@media (min-width: 750px) {
+	.wrapper {	grid-gap: 20px;
+				grid-template-columns: auto 120px;
+				grid-template-areas:
+				"header header header"
+				"content content sidebar"
+				"content content sidebar"
+				"footer footer footer";}}				
 				
 			
 nav { width: 100%;
@@ -82,6 +92,17 @@ a:hover 	{	color: #009999;
 a:active 	{	color: #009999; 
 				background-color: transparent; 
 				text-decoration: none;}	
+
+.fa {
+    padding: 40px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;}
+
+.fa:hover {
+    opacity: 0.7;}
+
 				
 #myDiv	{	background-color: #white;
 			border: 5px solid #009999;
