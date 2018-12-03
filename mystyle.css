@@ -1,15 +1,13 @@
 
 html {background-image:url('Images/Background1.jpg')}
 
-body{	background: #ffff99;
-		border: 5px solid #ffdb4d;
-		padding: 10px;
-		margin: 60px;
+body{	margin: 10px;
 		font-family: Arial;
-		color: #4d4d4d;
+		font-weight: bold;
+		color: #331a00;
 		text-align: justify;}	
 		
-.header		{grid-area: header;}
+.header		{grid-area: navbar;}
 .content	{grid-area: content;}
 .sidebar	{grid-area: sidebar;}
 .footer		{grid-area: footer;}
@@ -17,33 +15,33 @@ body{	background: #ffff99;
 .wrapper	{	display: grid;
 				grid-gap: 1em;
 				grid-template-areas:
-				"header"
+				"navbar"
 				"content"
 				"sidebar"
-				"footer";}
+				"footer";
+}
 				
 @media (min-width: 500px) {
-	.wrapper {	grid-template-columns: 20% auto;
+	.wrapper {	grid-template-columns: auto;
 				grid-template-areas:
-				"header header"
-				"content sidebar"
-				"content sidebar"
-				"footer footer";}}
+				"navbar 	navbar"
+				"content 	content"
+				"sidebar 	sidebar"
+				"footer 	footer";}}
 				
 @media (min-width: 750px) {
 	.wrapper {	grid-gap: 20px;
-				grid-template-columns: auto 120px;
+				grid-template-columns: auto;
 				grid-template-areas:
-				"header header header"
-				"content content sidebar"
-				"content content sidebar"
-				"footer footer footer";}}				
+				"navbar 	navbar		navbar"
+				"content 	content		content"
+				"sidebar 	sidebar		sidebar"
+				"footer 	footer		footer";}}
 				
-			
-nav { width: 100%;
-  background-color: white;
-  margin: 0;
-  overflow: auto;}
+nav { 	width: 100%;
+		background-color: white;
+		margin: 0;
+		overflow: auto;}
   
 nav ul {
   margin: 0;
@@ -65,10 +63,10 @@ nav ul li:first-child {
 nav ul li a.logo {
   background-color: white;
 }
-nav ul li a:link 	{	color: #4d4d4d; 
+nav ul li a:link 	{	color: #331a00; 
 						background-color: transparent; 
 						text-decoration: none;}	
-nav ul li a:visited {	color: #4d4d4d; 
+nav ul li a:visited {	color: #331a00; 
 						background-color: transparent; 
 						text-decoration: none;}
 nav ul li a:hover 	{ 	color: #009999;
@@ -76,10 +74,9 @@ nav ul li a:hover 	{ 	color: #009999;
 						text-decoration: none;}
 nav ul li a:active 	{	color: #009999; 
 						background-color: transparent; 
-						text-decoration: none;}				
-							
-
-							
+						text-decoration: none;}
+						
+						
 a:link 		{	color: blue; 
 				background-color: transparent; 
 				text-decoration: none;}	
@@ -91,28 +88,45 @@ a:hover 	{	color: #009999;
 				text-decoration: none;}	
 a:active 	{	color: #009999; 
 				background-color: transparent; 
-				text-decoration: none;}	
+				text-decoration: none;}
 
-.fa {
-    padding: 40px;
-    font-size: 50px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;}
+				
+#mySide	{	background-color: #white;
+			padding: 30px;
+			margin: 50px;}
+			
+.fa {	padding: 40px;
+		width: 100%;
+		height: auto;
+		text-align: center;
+		text-decoration: none;}
+    
 
 .fa:hover {
     opacity: 0.7;}
+	
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 30%;
+  padding: 30px;
+}
 
-				
-#myDiv	{	background-color: #white;
-			border: 5px solid #009999;
-			padding: 30px;
-			margin: 50px;}			
-					
-					
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#myDiv	{	padding: 10px;
+			margin: 10px;}
+			
 footer {display: block;
 		background-color: white;
-		color: #4d4d4d;
+		padding: 20px;
+		color: #331a00;
 		bottom: 0;
 		width: 100%;
 		text-align: left;}
+	
