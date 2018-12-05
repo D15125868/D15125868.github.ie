@@ -3,6 +3,7 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta charset="UTF-8">
 	<meta name="description" content="Shipwrecks Database of Ireland">
 	<meta name="keywords" content="SDI, shipwrecks, ship, wrecks, wreckage, database,
@@ -109,86 +110,94 @@ img {
 </style>
 <body>
 
-<nav>
-  <ul>
-    <li><a href="index.html" class="logo">
-	<img src="Images/SDI_Logo.jpg" title="Home" alt="SDI Logo" style="width:200px;height:160px;border:0;"></a>
-    </li>
-    <li><a href="Data.html">Data</a>
-    </li>
-    <li><a href="News_Events.html">News & Events</a>
-    </li>
-    <li><a href="Gallery.html">Gallery</a>
-    </li>
-	<li><a href="Contact.html">Contact</a>
-    </li>
-  </ul>
-</nav>
-
-<div id="GalleryDiv">
-	<h2 style="text-align:center">Shipwrecks Gallery</h2>
-	<div class="container">
-	  <div class="mySlides">
-		<div class="numbertext">1 / 5</div>
-		<img src="Images/RMS Leinster.jpeg" style="width:100%">
-	  </div>
-
-	  <div class="mySlides">
-		<div class="numbertext">2 / 5</div>
-		<img src="Images/RMS Lusitania.jpg" style="width:100%">
-	  </div>
-
-	  <div class="mySlides">
-		<div class="numbertext">3 / 5</div>
-		<img src="Images/SS Ydun.jpeg" style="width:100%">
-	  </div>
-		
-	  <div class="mySlides">
-		<div class="numbertext">4 / 5</div>
-		<img src="Images/HMS_Vanguard.jpg" style="width:100%">
-	  </div>
-
-	  <div class="mySlides">
-		<div class="numbertext">5 / 5</div>
-		<img src="Images/SS Polwell.jpeg" style="width:100%">
-	  </div>
-		
-	  <a class="prev" onclick="plusSlides(-1)">❮</a>
-	  <a class="next" onclick="plusSlides(1)">❯</a>
-
-	  <div class="caption-container">
-		<p id="caption"></p>
-	  </div>
-
-	  <div class="row">
-		<div class="column">
-		  <img class="demo cursor" src="Images/RMS Leinster.jpeg" style="width:100%" onclick="currentSlide(1)" alt="RMS Leinster">
-		</div>
-		<div class="column">
-		  <img class="demo cursor" src="Images/RMS Lusitania.jpg" style="width:100%" onclick="currentSlide(2)" alt="RMS Lusitania">
-		</div>
-		<div class="column">
-		  <img class="demo cursor" src="Images/SS Ydun.jpeg" style="width:100%" onclick="currentSlide(3)" alt="SS Ydun">
-		</div>
-		<div class="column">
-		  <img class="demo cursor" src="Images/HMS_Vanguard.jpg" style="width:100%" onclick="currentSlide(4)" alt="HMS Vanguard">
-		</div>
-		<div class="column">
-		  <img class="demo cursor" src="Images/SS Polwell.jpeg" style="width:100%" onclick="currentSlide(5)" alt="SS Polwell">
-		</div>    
-	  </div>
-	 </div>
-</div>
-
-<footer>	
-	<div style="padding:10px">
-		<a href="index.html" title="Redirect to SDI Homepage" target="_blank">Shipwrecks Database of Ireland</a>
-		<p> Beggars Bush,<br>
-			Haddington Road, <br>
-			Dublin D04 K7X4. <br>
-			Tel: +353 (0)1 678 2896 </p>
+<div class="wrapper">	
+	<div class="header">	
+		<nav>
+		  <ul>
+			<li><a href="index.html" class="logo">
+			<img src="Images/SDI_Logo.jpg" title="Home" alt="SDI Logo" style="width:200px;height:160px;border:0;"></a>
+			</li>
+			<li><a href="Data.html">Data</a>
+			</li>
+			<li><a href="News_Events.html">News & Events</a>
+			</li>
+			<li><a href="Gallery.html">Gallery</a>
+			</li>
+			<li><a href="Contact.html">Contact</a>
+			</li>
+		  </ul>
+		</nav>
 	</div>
-</footer>
+
+	<div class="content">
+		<div id="GalleryDiv">
+			<h2 style="text-align:center">Shipwrecks Gallery</h2>
+			<div class="container">
+			  <div class="mySlides">
+				<div class="numbertext">1 / 5</div>
+				<img src="Images/RMS Leinster.jpeg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+				<div class="numbertext">2 / 5</div>
+				<img src="Images/RMS Lusitania.jpg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+				<div class="numbertext">3 / 5</div>
+				<img src="Images/SS Ydun.jpeg" style="width:100%">
+			  </div>
+				
+			  <div class="mySlides">
+				<div class="numbertext">4 / 5</div>
+				<img src="Images/HMS_Vanguard.jpg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+				<div class="numbertext">5 / 5</div>
+				<img src="Images/SS Polwell.jpeg" style="width:100%">
+			  </div>
+				
+			  <a class="prev" onclick="plusSlides(-1)">❮</a>
+			  <a class="next" onclick="plusSlides(1)">❯</a>
+
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+
+			  <div class="row">
+				<div class="column">
+				  <img class="demo cursor" src="Images/RMS Leinster.jpeg" style="width:100%" onclick="currentSlide(1)" alt="RMS Leinster">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="Images/RMS Lusitania.jpg" style="width:100%" onclick="currentSlide(2)" alt="RMS Lusitania">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="Images/SS Ydun.jpeg" style="width:100%" onclick="currentSlide(3)" alt="SS Ydun">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="Images/HMS_Vanguard.jpg" style="width:100%" onclick="currentSlide(4)" alt="HMS Vanguard">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="Images/SS Polwell.jpeg" style="width:100%" onclick="currentSlide(5)" alt="SS Polwell">
+				</div>    
+			  </div>
+			 </div>
+		</div>
+	</div>
+
+<div class="footer">
+		<footer>	
+			<div style="padding:10px">
+				<a href="index.html" title="Redirect to SDI Homepage" target="_blank">Shipwrecks Database of Ireland</a>
+				<p> Beggars Bush,<br>
+					Haddington Road, <br>
+					Dublin D04 K7X4. <br>
+					Tel: +353 (0)1 678 2896 </p>
+			</div>
+		</footer>
+	</div>
+</div>
 
 <script>
 var slideIndex = 1;

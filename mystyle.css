@@ -20,14 +20,15 @@ body{	background: #ffff99;
 				"header"
 				"content"
 				"sidebar"
-				"footer";}
+				"footer";
+}
 				
 @media (min-width: 500px) {
 	.wrapper {	grid-template-columns: 20% auto;
 				grid-template-areas:
 				"header header"
-				"content sidebar"
-				"content sidebar"
+				"content content"
+				"sidebar sidebar"
 				"footer footer";}}
 				
 @media (min-width: 750px) {
@@ -35,8 +36,8 @@ body{	background: #ffff99;
 				grid-template-columns: auto 120px;
 				grid-template-areas:
 				"header header header"
-				"content content sidebar"
-				"content content sidebar"
+				"content content content"
+				"sidebar sidebar sidebar"
 				"footer footer footer";}}				
 				
 			
@@ -93,15 +94,29 @@ a:active 	{	color: #009999;
 				background-color: transparent; 
 				text-decoration: none;}	
 
-.fa {
-    padding: 40px;
-    font-size: 50px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;}
+.fa {	padding: 40px;
+		width: 100%;
+		height: auto;
+		text-align: center;
+		text-decoration: none;}
+    
 
 .fa:hover {
     opacity: 0.7;}
+	
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 25%;
+  padding: 45px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 				
 #myDiv	{	background-color: #white;
