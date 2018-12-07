@@ -1,132 +1,215 @@
-
+/* MY CODE */
 html {background-image:url('Images/Background1.jpg')}
 
-body{	background: #ffff99;
-		border: 5px solid #ffdb4d;
-		padding: 10px;
-		margin: 60px;
+body {	margin: 0;
 		font-family: Arial;
+		font-weight: bold;
 		color: #4d4d4d;
-		text-align: justify;}	
-		
-.header		{grid-area: header;}
-.content	{grid-area: content;}
-.sidebar	{grid-area: sidebar;}
-.footer		{grid-area: footer;}
+		text-align: justify;
+}
 
-.wrapper	{	display: grid;
-				grid-gap: 1em;
-				grid-template-areas:
-				"header"
-				"content"
-				"sidebar"
-				"footer";
-}
-				
-@media (min-width: 500px) {
-	.wrapper {	grid-template-columns: 20% auto;
-				grid-template-areas:
-				"header header"
-				"content content"
-				"sidebar sidebar"
-				"footer footer";}}
-				
-@media (min-width: 750px) {
-	.wrapper {	grid-gap: 20px;
-				grid-template-areas:
-				"header header header"
-				"content content content"
-				"sidebar sidebar sidebar"
-				"footer footer footer";}}				
-				
-			
-nav { width: 100%;
-  background-color: white;
-  margin: 0;
-  overflow: auto;}
-  
-nav ul {
-  margin: 0;
-  padding: 0;
-  display: flex;}
-  
-nav ul li {list-style-type: none;}
-  
-nav ul li a {	font-family: Arial;
-				font-weight: bold;
-				display: block;
-				padding: 1em 4.5em;
-				text-decoration: none;
-				fixed: botttom;}
-				
-nav ul li:first-child {
-  margin-right: center;
-}
-nav ul li a.logo {
-  background-color: white;
-}
-nav ul li a:link 	{	color: #4d4d4d; 
-						background-color: transparent; 
-						text-decoration: none;}	
-nav ul li a:visited {	color: #4d4d4d; 
-						background-color: transparent; 
-						text-decoration: none;}
-nav ul li a:hover 	{ 	color: #009999;
-						background-color: #ffdb4d;
-						text-decoration: none;}
-nav ul li a:active 	{	color: #009999; 
-						background-color: transparent; 
-						text-decoration: none;}				
-							
+.navbar				{grid-area: navbar
+					grid-gap: 20px;
+					grid-template-columns: auto auto auto;
+					grid-template-areas:
+					"navbar navbar navbar"
+					"content content content"
+					"sidebar sidebar sidebar"
+					"footer footer footer";}
+.content			{grid-area: content;}
+.sidebar			{grid-area: sidebar;}
+.footerClass		{grid-area: footer} 
+/* changed to "footerClass" as I think code was getting confused between footer class and footer tag in html */
 
-							
+
+
+/* NAVBAR CSS */
+/* topnav code came from w3schools with some editing by me to change design */
+ul.topnav {	list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: white;}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {	display: block;
+					color: #4d4d4d;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;}
+
+ul.topnav li a:hover {	background-color: #ffdb4d;}
+ul.topnav li a:active {	background-color: #009999;}
+
+
+
+
+/* MY CODE */
+/* Image for navbar */
+.homeImage {	width:100%;
+				height:auto;
+				border:0;
+				min-width:100px
+}
+
+/* MY CODE */
+/* Color controls for links */
 a:link 		{	color: blue; 
 				background-color: transparent; 
-				text-decoration: none;}	
+				text-decoration: none;
+}	
 a:visited 	{	color: blue; 
 				background-color: transparent; 
-				text-decoration: none;}	
+				text-decoration: none;
+}	
 a:hover 	{	color: #009999; 
 				background-color: transparent; 
-				text-decoration: none;}	
+				text-decoration: none;
+}	
 a:active 	{	color: #009999; 
 				background-color: transparent; 
-				text-decoration: none;}	
+				text-decoration: none;
+}	
 
+
+
+
+/* ICON CSS */
+/* Code for icons taken from w3schools with edits to design */
 .fa {	padding: 40px;
 		width: 100%;
 		height: auto;
 		text-align: center;
 		text-decoration: none;}
     
-
-.fa:hover {
-    opacity: 0.7;}
+.fa:hover {	opacity: 0.7;}
 	
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 25%;
-  padding: 45px;
-}
+.column {	float: left;
+			width: 50%;
+			padding: 55px;}
 
 /* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+.row:after {	content: "";
+				clear: both;
+				display: table;}
 
-				
+
+
+
+/* MY CODE */
+/* mydiv code */				
 #myDiv	{	background-color: #white;
 			border: 5px solid #009999;
-			padding: 30px;
-			margin: 50px;}			
-					
-					
+			padding: 20px;
+			margin: 20px;
+}			
+
+/* MY CODE */
+/* h2 code */
+h2 {text-align:center}
+
+/* MY CODE */
+/* iframe code */
+.myiframe	{	padding: 10px; 
+				margin: 10px;
+}
+
+/* MY CODE */
+/* footer code */					
 footer {display: block;
 		background-color: white;
 		color: #4d4d4d;
 		bottom: 0;
 		width: 100%;
-		text-align: left;}
+		text-align: left;
+}
+
+
+
+
+/* GALLERY CSS */
+/* Code for icons taken from w3schools with edits to design */
+#GalleryDiv {	margin: 30px;
+				padding: 100px;}
+
+* {	box-sizing: border-box;}
+
+img {	vertical-align: middle;}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {position: centre;}
+
+/* Hide the images by default */
+.mySlides {	display: none;}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {	cursor: pointer;}
+
+/* Next & previous buttons */
+.prev,
+.next {	cursor: pointer;
+		position: absolute;
+		top: 40%;
+		width: auto;
+		padding: 16px;
+		margin-top: -50px;
+		color: black;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		-webkit-user-select: none;}
+
+/* Position the "next button" to the right */
+.next {	right: 120px;
+		border-radius: 3px 0 0 3px;}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {	background-color: rgba(0, 0, 0, 0.5);}
+
+/* Container for image text */
+.caption-container {	text-align: center;
+						background-color: white;
+						padding: 2px 16px;
+						color: #4d4d4d}
+
+.r:after {	content: "";
+			display: table;
+			clear: both;}
+
+/* Five columns side by side */
+.c {	float: left;
+		width: 20%;}
+
+/* Add a transparency effect for thumnbail images */
+.demo {	opacity: 0.6;}
+.active,
+.demo:hover {	opacity: 1;}
+
+
+
+/* MY CODE */
+/* @media queries would only come into effect when I pt them at bottom of page.*/
+@media screen and (max-width: 600px) {	ul.topnav li.right, 
+										ul.topnav li {float: none;}
+										display: grid;
+										grid-template-columns: auto auto;
+										grid-template-areas:
+										"navbar navbar"
+										"content content"
+										"sidebar sidebar"
+										"footer footer";
+}
+				
+@media screen and (max-width: 350px) {	ul.topnav li.right, 
+										ul.topnav li {float: none;}
+										display: grid;
+										grid-gap: 1em;
+										grid-template-areas:
+										"navbar"
+										"content"
+										"sidebar"
+										"footer";
+}
